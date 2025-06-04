@@ -4,7 +4,7 @@ import { SimplePokemon } from '../../interfaces/simple-pokemon.interface';
 import { PokemonListComponent } from './pokemon-list.component';
 
 const mockPokemons: SimplePokemon[] = [
-  {id: '1', name: 'bulbasur'},
+  {id: '1', name: 'bulbasaur'},
   {id: '2', name: 'ivysaur'}
 ];
 

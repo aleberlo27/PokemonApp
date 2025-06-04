@@ -5,7 +5,7 @@ import { SimplePokemon } from '../../interfaces/simple-pokemon.interface';
 
 const mockPokemon: SimplePokemon = {
   id: '1',
-  name: 'bulbasur',
+  name: 'bulbasaur',
 };
 
 describe('PokemonCard Component', () => {
