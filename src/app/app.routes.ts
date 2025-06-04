@@ -14,20 +14,18 @@ export const routes: Routes = [
     loadComponent: () => import('./pages/pokemon/pokemon-page.component')
   },
   {
-    path: '**',
-    redirectTo: 'pokemons/page/1'
+    path: 'about',
+    loadComponent: () => import('./pages/about/about-page.component')
   },
-  // {
-  //   path: 'about',
-  //   loadComponent: () => import('./pages/about/about-page.component')
-  // },
-  // {
-  //   path: 'pricing',
-  //   loadComponent: () => import('./pages/pricing/pricing-page.component')
-  // },
-  // {
-  //   path: '**',
-  //   redirectTo: 'about'
-  // }
+  {
+    path: 'pricing',
+    loadComponent: () => import('./pages/pricing/pricing-page.component')
+  },
+  {
+    path: '**',
+    redirectTo: () => {
+      return 'about';
+    }
+  },
 
 ];
