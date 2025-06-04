@@ -39,13 +39,12 @@ export default class PokemonsPageComponent {
   //   this.loadPokemons();
   // }
 
-  public loadPokemons( page = 1){
-    const pageToLoad = this.currentPage()! + page;
+  public loadPokemons( page = 0){
     this.isLoading.set(true);
-    this.pokemonService.loadPage(pageToLoad)
+    this.pokemonService.loadPage(page)
     .pipe(
       // tap(() => this.router.navigate([], {queryParams: {page: pageToLoad}})),
-      tap(() => this.title.setTitle(`Pokémon SSR - Page ${pageToLoad}`)),
+      tap(() => this.title.setTitle(`Pokémon SSR - Page ${page}`)),
       delay(1000),
     )
     .subscribe(pokemons => {
