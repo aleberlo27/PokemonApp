@@ -46,17 +46,12 @@ describe('AppComponent', () => {
   it('should create the app', () => {
     const app = fixture.componentInstance;
 
-    console.log(compiled);
-
     expect(app).toBeTruthy();
   });
 
   it(`should render the navbar and router-outlet `, () => {
     expect(compiled.querySelector('app-navbar')).toBeTruthy();
     expect(compiled.querySelector('router-outlet')).toBeTruthy();
-  });
-
-  it(``, () => {
   });
 
   // it('should render title', () => {

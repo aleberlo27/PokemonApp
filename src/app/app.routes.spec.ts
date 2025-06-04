@@ -2,8 +2,6 @@ import { TestBed } from '@angular/core/testing';
 import { routes } from './app.routes';
 import { provideRouter, Router } from '@angular/router';
 import { Location } from '@angular/common';
-import AboutPageComponent from './pages/about/about-page.component';
-import { delay } from 'rxjs';
 
 describe('App Routes', () => {
   let router: Router;
